@@ -1,0 +1,11 @@
+[Unit]
+Description=heartbeat server
+
+[Service]
+ExecStart=/home/xx/heartbeat/heartbeat
+Restart=always
+Environment=PATH=/usr/bin:/usr/local/bin
+WorkingDirectory=/home/xx
+
+[Install]
+WantedBy=multi-user.target
